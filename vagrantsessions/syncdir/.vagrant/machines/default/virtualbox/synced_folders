@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html/hostwebfiles/":{"guestpath":"/var/www/html/hostwebfiles","hostpath":"C:/vagarant-vms/vagrantsessions/websitefiles","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/vagarant-vms/vagrantsessions/syncdir","disabled":false,"__vagrantfile":true}}}

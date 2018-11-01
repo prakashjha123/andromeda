@@ -1,0 +1,20 @@
+Vagrant.configure("2") do |config|
+  config.vm.provision "shell", inline: "echo Hello"
+
+  config.vm.define "web01" do |web01|
+    web01.vm.box = "ubuntu/xenial64"
+	web01.vm.network "private_network", ip: "192.168.5.2"
+	web01.vm.network "private_network", ip: "192.168.5.2"
+  end
+  
+    config.vm.define "db01" do |db01|
+    db01.vm.box = "centos/6"
+	db01.vm.network "private_network", ip: "192.168.5.3"
+  end
+
+  config.vm.define "control" do |control|
+    control.vm.box = "centos/6"
+	control.vm.network "private_network", ip: "192.168.5.4"
+  end
+  
+end
